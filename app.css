@@ -1,0 +1,87 @@
+body {
+    background-image: url('m1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+    opacity: 98vh;
+}
+
+.container {
+    background-color: rgba(220, 237, 237, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+
+.todo h1 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.todo h1 image {
+    width: 30px;
+    margin-left: 10px;
+}
+.btn {
+    border: none;
+    outline: none;
+    background-color: #ff5945;
+    color: #fff;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Check the path for the images below */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('unchecked.png'); /* Check the path here */
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* Check the path for the images below */
+ul li.checked::before {
+    background-image: url('checked.png'); /* Check the path here */
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+   
+}
+ul li span:hover{
+background: #edeef0;
+}
